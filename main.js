@@ -34,3 +34,16 @@ for(const element of toggle){
     }
 
   })
+
+
+  /* Testimonials cards */
+
+  const swiper = new Swiper('.swiper-container', {
+   slidesPerview:1,
+   pagination:{
+       el:".swiper-pagination"
+   },
+   mousewheel:true,
+   keyboard:true
+
+  });
