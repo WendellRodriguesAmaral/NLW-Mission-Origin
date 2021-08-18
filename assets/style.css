@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ofx5pq');
-  src:  url('fonts/icomoon.eot?ofx5pq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ofx5pq') format('truetype'),
-    url('fonts/icomoon.woff?ofx5pq') format('woff'),
-    url('fonts/icomoon.svg?ofx5pq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?d4ok5j');
+  src:  url('fonts/icomoon.eot?d4ok5j#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?d4ok5j') format('truetype'),
+    url('fonts/icomoon.woff?d4ok5j') format('woff'),
+    url('fonts/icomoon.svg?d4ok5j#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,39 +25,53 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-up:before {
+  content: "\e90c";
+}
 .icon-phone:before {
   content: "\e900";
 }
 .icon-close:before {
   content: "\e901";
+  color: #69b99d;
 }
 .icon-cosmetic:before {
   content: "\e902";
+  color: #69b99d;
 }
 .icon-facebook:before {
   content: "\e903";
+
 }
 .icon-instagram:before {
   content: "\e904";
+
 }
 .icon-mail:before {
   content: "\e905";
+  color: #69b99d;
 }
 .icon-map-pin:before {
   content: "\e906";
+  color: #69b99d;
 }
 .icon-menu:before {
   content: "\e907";
+  color: #69b99d;
 }
 .icon-trim:before {
   content: "\e908";
+  color: #69b99d;
 }
 .icon-whatsapp:before {
   content: "\e909";
+  color: #69b99d;
 }
 .icon-woman-hair:before {
   content: "\e90a";
+  color: #69b99d;
 }
 .icon-youtube:before {
   content: "\e90b";
+
 }
