@@ -51,24 +51,33 @@ scrollReveal.reveal(
 
 /* mudar o menu da pagina quando der scroll */
 
-const header = document.querySelector("#header");
-const navHeight = header.offsetHeight;
+function changeHeaderWhenScroll() {
+  const header = document.querySelector("#header");
+  const navHeight = header.offsetHeight;
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= navHeight) {//se scroll maior ou igual a altura da barra de menu
+  if (window.scrollY >= navHeight) {
+    //se scroll maior ou igual a altura da barra de menu
     header.classList.add("scroll");
   } else {
     header.classList.remove("scroll");
   }
-});
+}
 
 /* botão voltar para o topo  */
 
-const backToTopButton = document.querySelector(".back-to-top");
-window.addEventListener("scroll", () => {
+function backToTop() {
+  const backToTopButton = document.querySelector(".back-to-top");
   if (window.scrollY >= 560) {
     backToTopButton.classList.add("show");
   } else {
     backToTopButton.classList.remove("show");
   }
+}
+
+
+/*executando as funções de alterar o menu quando rolar a pag e aparecer botão de voltar ao topo */
+
+window.addEventListener("scroll", () => {
+    changeHeaderWhenScroll()
+    backToTop()
 });
