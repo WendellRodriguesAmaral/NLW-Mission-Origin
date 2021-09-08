@@ -64,7 +64,7 @@ body {
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1rem var(--body-font)
+  font: 500 1rem var(--body-font);
   transition: background 0.3s;
 }
 
@@ -533,8 +533,29 @@ footer .social a:hover{
 
 @media (min-width: 1200px) {
 
+  .container{
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   .section{
     padding: 10rem 0;
+    }
+
+    .section header, 
+    #testimonials header{
+      max-width:32rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+    .button{
+      height: 3.125rem;
     }
 
     nav .menu{
@@ -551,9 +572,70 @@ footer .social a:hover{
       font: 400 1rem var(--body-font);  
     }
 
+    nav .icon-menu{
+      display: none;
+    }
+
+    
   main {
     margin-top: var(--header-height);
   }
+
+    /*     home     */
+    #home .container{
+      grid-auto-flow: column;
+      justify-content:space-between;
+      margin:0 auto;
+    }
+
+    #home .image{
+      order:1;
+    }
+
+    #home .text{
+      order:0;
+      max-width:24rem;
+      text-align:left;
+    }  
+
+
+    #about .container{
+      margin:0 auto;
+      grid-auto-flow: column;
+    }
+
+
+    .cards{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .card{
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+
+
+
+
+    #testimonials .container{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
