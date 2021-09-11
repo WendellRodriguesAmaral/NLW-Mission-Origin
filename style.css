@@ -169,11 +169,12 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
   color: var(--base-color);
 }
 
-nav ul li a::after {
+nav ul li a::after{
   content: ""; /*OBRIGATORIO*/
   width: 0%;
   height: 2px;
@@ -183,7 +184,8 @@ nav ul li a::after {
   bottom: -1.5rem;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after, 
+nav ul li a.active::after {
   width: 100%;
   transition: 0.2s;
 }
@@ -413,6 +415,10 @@ nav.show div.icon-close {
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
+}
+
+.swiper-pagination{
+  position: relative;
 }
 
 .swiper-pagination-bullet {
