@@ -21,12 +21,18 @@ for (link of links) {
 /* Testimonials cards */
 
 const swiper = new Swiper(".swiper-container", {
-  slidesPerview: 1,
+  slidesPerview: 1, // 1 slide por vez
   pagination: {
     el: ".swiper-pagination",
   },
-  mousewheel: true,
-  keyboard: true,
+  mousewheel: true, //rolar com o mouse 
+  keyboard: true, //rolar com as setas do teclado
+  breakpoints:{
+    767:{//de 767px de largura para cima....
+      slidesPerView:2, //2 slides por vez
+      setWrapperSize:true
+    }
+  }
 });
 
 /*  scroll reveal: mostrar os elementos quando dar o scroll na pag   */
